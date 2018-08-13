@@ -77,8 +77,12 @@
 >10 string      x                   file name: "%s",
 >6  string      x                   file permissions: "%.3s"
 
-0       string      \x00\x53\x46\x48                                    OSX DMG image
+#------------------MacOS Formats-----------------------------
+
+0       string      \x00\x53\x46\x48                                    MacOS DMG image
 >0x38   string      !d\x00i\x00s\x00k\x00\x20\x00i\x00m\x00a\x00g\x00e  invalid{invalid}
+
+0       string      BOMStore                                            MacOS bill of materials (BOM) file
 
 # Xilinx FPGA Bitstream
 # Ref: http://www.xilinx.com/support/answers/7891.html
